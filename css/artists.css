@@ -1,0 +1,22 @@
+@media (max-width: 800px) {
+  /* mobile (index) content - page */
+  .content-page {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: space-between;
+    padding-bottom: 50px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  /* desktop (index) content - page */
+  .content-page {
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    justify-content: space-between;
+    padding-bottom: 50px;
+    font-size: 12px;
+  }
+}

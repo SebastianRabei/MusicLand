@@ -8,6 +8,14 @@
   font-family: "Syne Mono", monospace;
 }
 
+.content-elem h3{
+  font-size: 16px;
+}
+
+.content-elem h4{
+  font-size: 14px;
+}
+
 .white-text {
   text-decoration: none;
   color: white;
@@ -191,7 +199,7 @@ body {
 
   .logo-copyright h5 {
     padding: 5px 0 0 15px;
-  }
+  }  
 }
 
 /* --------------------------------- DESKTOP --------------------------------- */

@@ -6,7 +6,6 @@
     grid-template-columns: repeat(3, 32%);
     justify-content: space-between;
     padding-bottom: 50px;
-    font-size: 14px;
   }
 }
 
@@ -17,6 +16,5 @@
     grid-template-columns: repeat(5, 18%);
     justify-content: space-between;
     padding-bottom: 50px;
-    font-size: 12px;
   }
 }

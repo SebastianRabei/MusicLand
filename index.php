@@ -14,34 +14,7 @@
 
 <body onload="getPosts()">
 
-  <header>
-    <div class="header-bar">
-      <div class="site-logo">
-        <a class="white-text" href="index.html">
-          <img src="images/icons/music.svg" alt="">
-          <h1 class="white-text">MusicLand</h1>
-        </a>
-      </div>
-      <div class="dropdown-search">
-        <div class="dropdown-btn">
-          <img src="images/icons/align-justify.svg" onclick="dropdownToggle()">
-        </div>
-        <div id="mydropdown" class="dropdown">
-          <div class="site-menu">
-            <a class="white-text" href="artists.html">Artists</a>
-            <a class="white-text" href="albums.html">Albums</a>
-            <a class="white-text" href="trending.html">Trending</a>            
-          </div>
-        </div>
-        <div class="site-search">
-          <input class="search-bar" type="text" name="" id="" placeholder="search..." />
-          <div class="search-btn">
-            <img src="images/icons/search.svg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+  <?php include 'components/_header.php'; ?>
 
   <div class="content">
     <div class="photos-container">
@@ -61,9 +34,9 @@
     </div>
 
     <div class="content-releases">
-      <h1><a href="trending.html" style="padding-top: 50px;" class="white-text">Trending Releases</a></h1>
+      <h1><a href="trending.php" style="padding-top: 50px;" class="white-text">Trending Releases</a></h1>
       <div class="content-page">
-        
+
         <div class="content-elem">
           <div class="content-photo"><img src="images/albums/1.jpg" alt=""></div>
           <h3 class="white-text ">Texas Moon</h3>
@@ -87,7 +60,7 @@
           <h3 class="white-text ">Lucifer On The Sofa</h3>
           <h4 class="white-text ">Spoon</h4>
         </div>
-        
+
       </div>
     </div>
 
@@ -177,20 +150,12 @@
 
         </div>
         <div class="content-btn" style="padding-bottom: 20px;">
-          <h2><a class="black-text" href="albums.html">See more Releases ></a></h2>
+          <h2><a class="black-text" href="albums.php">See more Releases ></a></h2>
         </div>
       </div>
     </div>
 
-    <footer>
-      <div class="copyright">
-        <div class="logo-copyright">
-          <img src="images/icons/music.svg" alt="">
-          <h2 class="white-text">MusicLand</h2>
-          <h5 class="white-text ">© All rights reserved ©</h5>
-        </div>
-      </div>
-    </footer>
+    <?php include 'components/footer.php'; ?>
 
 
   </div>

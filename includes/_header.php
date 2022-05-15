@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MusicLand</title>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
 <header>
     <div class="header-bar">
         <div class="site-logo">
@@ -6,7 +21,7 @@
                 <h1 class="white-text">MusicLand</h1>
             </a>
         </div>
-        <div class="dropdown-search">
+        <div class="dropdown-menu">
             <div class="dropdown-btn">
                 <img src="images/icons/align-justify.svg" onclick="dropdownToggle()">
             </div>
@@ -17,12 +32,22 @@
                     <a class="white-text" href="trending.php">Trending</a>
                 </div>
             </div>
-            <div class="site-search">
-                <input class="search-bar" type="text" name="" id="" placeholder="search..." />
-                <div class="search-btn">
-                    <img src="images/icons/search.svg" alt="">
-                </div>
-            </div>
         </div>
     </div>
+    
+    <?php include 'includes/db.inc.php';
+    include 'includes/albums.inc.php';
+    include 'includes/artists.inc.php';
+    include 'includes/images.inc.php';
+
+    $data_albums = new Albums();
+    $albums = $data_albums->getAlbums();
+    
+    $data_artists = new Artists();
+    $artists = $data_artists->getAlbums();
+
+    $data_images = new Images();
+    $images = $data_images->getImages();
+    ?>
+    
 </header>
